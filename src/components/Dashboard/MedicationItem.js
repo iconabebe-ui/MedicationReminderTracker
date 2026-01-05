@@ -44,7 +44,7 @@ const MedicationItem = ({ med, onSelect, onAction, onRefill }) => {
                 onClick={handleRefillClick}
                 className="inline-flex items-center px-2 py-0.5 rounded-full bg-red-50 border border-red-100 hover:bg-red-500 hover:text-white transition-colors group"
               >
-                <span className="text-[9px] font-black text-red-500 uppercase group-hover:text-white mr-1">Low Stock: {med.stock}</span>
+                <span className="text-[9px] font-black text-red-500 uppercase group-hover:text-white mr-1">Low Stock: {med.stock}  refill</span>
                 <RefreshCw size={10} className="text-red-400 group-hover:text-white" />
               </button>
             )}

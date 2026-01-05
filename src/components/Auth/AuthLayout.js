@@ -10,7 +10,7 @@ const AuthLayout = ({ children, title, subtitle }) => {
         <div className="bg-[#00a6d6] text-white p-3 rounded-xl inline-block mb-4 shadow-sm">
           <Bell size={32} fill="currentColor" />
         </div>
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">MedTracker</h1>
+        <h1 className="text-3xl font-bold text-gray-800 mb-2">Medication Reminder & Tracker</h1>
         <p className="text-gray-500 text-lg">Never miss a dose again</p>
       </div>
 
@@ -26,7 +26,7 @@ const AuthLayout = ({ children, title, subtitle }) => {
 
       {/* Medical Disclaimer */}
       <p className="text-gray-400 text-xs text-center mt-12 max-w-xs">
-        This app does not provide medical advice. Always consult your healthcare provider.
+        This app does not provide does not provide medical advice, diagnosis, or treatment. Always consult your healthcare provider.
       </p>
     </div>
   );

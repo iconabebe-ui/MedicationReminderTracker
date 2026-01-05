@@ -105,7 +105,7 @@ const Dashboard = () => {
     } catch (err) { setToast("Server error."); }
   };
 
-  const handleRefill = async (medId) => {
+  const handleRefill =  async  (medId)  => {
     const token = localStorage.getItem('token');
     const med = medications.find(m => m.id === medId);
     if (!med) return;
@@ -153,10 +153,13 @@ const Dashboard = () => {
     <div className="min-h-screen bg-gray-50 pb-24 text-left relative">
       <header className="bg-white px-6 pt-8 pb-6 rounded-b-[2.5rem] shadow-sm">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-2xl font-black italic tracking-tight">MedTracker</h1>
-          <button onClick={() => { localStorage.removeItem('token'); navigate('/login'); }} className="text-gray-400 p-2">
-            <LogOut size={22} />
+          <h1 className="text-2xl font-black italic tracking-tight">Medication Reminder & Tracker</h1>
+        
+          <div className="p-4 border-t border-gray-100">
+          <button onClick={() => { localStorage.removeItem('token'); navigate('/login'); }} className="w-full flex items-center px-4 py-3 text-red-500 hover:bg-red-50 rounded-lg transition-colors">
+            <LogOut size={20} className="mr-3" /> Log-out
           </button>
+        </div>
         </div>
         <div className="bg-white border p-5 rounded-3xl flex items-center shadow-sm">
           <AdherenceChart percent={adherence.percent} />
@@ -178,7 +181,7 @@ const Dashboard = () => {
               med={med} 
               onSelect={setSelectedMedId} 
               onAction={(status) => handleDoseAction(med.id, status)} 
-              onRefill={handleRefill}
+              onRefill={handleRefill} 
             />
           ))}
         </div>
@@ -190,7 +193,7 @@ const Dashboard = () => {
         onClick={() => setIsAddModalOpen(true)} 
         className="fixed bottom-8 right-6 w-16 h-16 bg-[#00a6d6] text-white rounded-full shadow-2xl flex items-center justify-center z-40 active:scale-90 transition-all"
       >
-        <Plus size={32} />
+        <Plus size={30} />
       </button>
       
       <AddMedication isOpen={isAddModalOpen} onClose={() => setIsAddModalOpen(false)} onRefresh={() => setRefreshTrigger(p => p+1)} />
