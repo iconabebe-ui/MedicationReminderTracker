@@ -25,7 +25,7 @@ const AuthLayout = ({ children, title, subtitle }) => {
       </div>
 
       {/* Medical Disclaimer */}
-      <p className="text-gray-300 text-xs text-center mt-12 max-w-xs">
+      <p className="text-black-300 text-xs text-center mt-12 max-w-xs">
         This app does not provide medical advice, diagnosis, or treatment. Always consult your healthcare provider.
       </p>
     </div>
