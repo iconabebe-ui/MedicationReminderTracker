@@ -105,7 +105,7 @@ const Login = () => {
       <div className="text-center mt-8 text-sm text-gray-500 font-medium">
         Don't have an account?{' '}
         <Link to="/register" className="text-[#00a6d6] font-bold hover:underline ml-1">
-          Sign up
+          Register
         </Link>
       </div>
     </AuthLayout>
