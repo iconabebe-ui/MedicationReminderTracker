@@ -69,7 +69,7 @@ const Register = () => {
   return (
     <AuthLayout 
       title="Create an account" 
-      subtitle="Join MedTracker to manage your health"
+      subtitle="Join Med Tracker to manage your health"
     >
       <form onSubmit={handleSubmit} className="space-y-4 text-left">
         {error && (
