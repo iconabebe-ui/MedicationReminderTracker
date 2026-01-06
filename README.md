@@ -2,19 +2,19 @@ Here is the complete, formatted content for your `README.md` file. You can copy 
 
 ---
 
-# 💊 Medication Reminder & Tracker
+#  Medication Reminder & Tracker
 
-## 📋 Project Summary
+##  Project Summary
 
 The **Medication Reminder & Tracker** is a mobile-first web application designed to help users manage complex medication schedules reliably. It addresses the common problem of medical non-adherence by providing timely in-app reminders and a clear tracking log for users to record when doses are taken or skipped. The project aims to improve patient compliance and reduce health risks through a simple, effective interface targeted at individuals with chronic conditions, caregivers, and the elderly.
 
 ---
 
-## 🏗️ Folder Structure & Descriptions
+##  Folder Structure & Descriptions
 
 Based on the project architecture, here is the responsibility of each key directory:
 
-### 📂 Backend (`/backend`)
+###  Backend (`/backend`)
 
 * **`server.js`**: The main entry point that initializes the Express server, connects middleware, and mounts API routes.
 * **`config/`**: Contains database configuration logic, such as `db.js`, to manage the connection to the PostgreSQL database.
@@ -23,7 +23,7 @@ Based on the project architecture, here is the responsibility of each key direct
 * **`middleware/`**: Includes security logic like `auth.js` to verify JWT tokens before allowing access to private data.
 * **`routes/`**: Defines the API endpoints for user authentication, medication management, and reminder tracking.
 
-### 📂 Frontend (`/frontend`)
+###  Frontend (`/frontend`)
 
 * **`src/App.jsx`**: The main component handling application routing and global state.
 * **`src/api.js`**: A centralized Axios configuration for making authorized API calls to the backend.
@@ -36,7 +36,7 @@ Based on the project architecture, here is the responsibility of each key direct
 
 ---
 
-## 🔄 Relationship Between Components
+##  Relationship Between Components
 
 The application follows a **Request-Response** architecture supported by automated background services:
 
@@ -47,7 +47,7 @@ The application follows a **Request-Response** architecture supported by automat
 
 ---
 
-## 🗄️ Database Explanation
+##  Database Explanation
 
 The project uses **PostgreSQL** to manage relational data effectively.
 
@@ -57,7 +57,7 @@ The project uses **PostgreSQL** to manage relational data effectively.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend**: React.js, Tailwind CSS, html.
 * **Backend**: Node.js, Express.js.
@@ -67,7 +67,7 @@ The project uses **PostgreSQL** to manage relational data effectively.
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Implementation of native mobile push notifications.
 * "As-needed" (PRN) medication support.
