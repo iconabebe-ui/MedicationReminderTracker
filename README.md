@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+Bibiane Syriane Kammogne Kamwa / 2025 Intake
+	
+11:04 PM (6 minutes ago)
+	
+	
+to me
+Why is this message in spam?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This message is similar to messages that were identified as spam in the past.
+# 💊 MedTracker - Medication Reminder & Tracker (Frontend)
 
-## Available Scripts
+MedTracker is a mobile-first web application built with **React.js** to help patients and caregivers manage medication schedules. It provides automated tracking, stock management, and visual adherence analytics.
 
-In the project directory, you can run:
+## 🚀 Key Features
 
-### `npm start`
+* **Daily Action Center**: A streamlined "Today" view that displays medications due now with one-tap "Take" or "Skip" buttons.
+* **Adherence Dashboard**: Visual 7-day analytics including percentage charts and daily progress bars.
+* **Inventory Tracking**: Integrated stock management that triggers "Low Stock" alerts and facilitates easy refills.
+* **Dose History**: A searchable record of all past actions to ensure transparency for healthcare providers.
+* **In-App Alerts**: A polling system that notifies users when a scheduled dose is due.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Framework**: React.js
+* **Styling**: Mobile-First Responsive CSS / Tailwind CSS
+* **Icons**: Lucide-React
+* **API Communication**: Fetch API with async/await
+* **Deployment**: Render (Static Site)
 
-### `npm test`
+## 🔌 API Integration Reference
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The frontend is integrated with the backend API at:  
+`https://medication-reminder-tracker.onrender.com/api`
 
-### `npm run build`
+### Integrated Endpoints:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Category | Endpoint | Method | Purpose |
+| :--- | :--- | :--- | :--- |
+| **Medication** | `/medications` | `GET/POST` | Fetch all or add new medication |
+| **Updates** | `/medications/:id` | `PUT/DELETE` | Edit details, refill stock, or remove |
+| **Logging** | `/medications/:id/log` | `POST` | Record dose as "Taken" or "Skipped" |
+| **Stats** | `/adherence` | `GET` | Calculate 7-day adherence data |
+| **History** | `/dose-logs` | `GET` | Retrieve chronological intake logs |
+| **System** | `/health` | `GET` | Sync server time for accurate reminders |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```text
+src/
+├── components/
+│ ├── Dashboard/ # Adherence Chart & Today's Schedule
+│ ├── Medication/ # Medication CRUD & Card Views
+│ ├── Forms/ # Entry forms for meds & doses
+│ └── Layout/ # Mobile Navigation & Header
+├── context/ # Global state (MedicationContext)
+├── utils/ # Adherence logic & Date formatting
+└── hooks/ # Custom API and Storage hooks
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
