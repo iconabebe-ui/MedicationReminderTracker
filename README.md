@@ -1,12 +1,3 @@
-Bibiane Syriane Kammogne Kamwa / 2025 Intake
-	
-11:04 PM (6 minutes ago)
-	
-	
-to me
-Why is this message in spam?
-
-This message is similar to messages that were identified as spam in the past.
 # 💊 MedTracker - Medication Reminder & Tracker (Frontend)
 
 MedTracker is a mobile-first web application built with **React.js** to help patients and caregivers manage medication schedules. It provides automated tracking, stock management, and visual adherence analytics.
