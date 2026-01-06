@@ -140,7 +140,3 @@ To run this project locally:
 4. Run `npm run dev` in both directories.
 
 ```
-
-Would you like me to help you create a sample `.env.example` file so users know exactly what keys to add to their environment?
-
-```
