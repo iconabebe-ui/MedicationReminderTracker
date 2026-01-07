@@ -1,12 +1,12 @@
 ```markdown
-# 💊 Medication Reminder & Tracker
+#  Medication Reminder & Tracker
 
-## 📋 Summary
+##  Summary
 The **Medication Reminder & Tracker** is a mobile-first web application designed to help users manage complex medication schedules reliably. The system automates the creation of daily dose logs, provides real-time in-app alerts for overdue medications, and visualizes adherence data to improve patient compliance and reduce health risks associated with missed doses.
 
 ---
 
-## 🏗️ Architecture & File Descriptions
+##  Architecture & File Descriptions
 
 ### Project Template
 ```text
@@ -54,7 +54,7 @@ medication-reminder-tracker/
 
 ---
 
-### 📂 Backend (`/backend`)
+###  Backend (`/backend`)
 
 The backend is a **RESTful API** designed with a modular structure to ensure the "engine" (logic) is separated from the "data" (storage).
 
@@ -70,7 +70,7 @@ The backend is a **RESTful API** designed with a modular structure to ensure the
 
 ---
 
-### 📂 Frontend (`/frontend`)
+###  Frontend (`/frontend`)
 
 The frontend is a **Single Page Application (SPA)** built for speed and a smooth mobile experience.
 
@@ -85,7 +85,7 @@ The frontend is a **Single Page Application (SPA)** built for speed and a smooth
 
 ---
 
-## 🔄 Relationship & Data Flow
+##  Relationship & Data Flow
 
 1. **Input**: User defines a schedule in `AddMedication.js`.
 2. **Processing**: The Frontend `api/` sends this to the Backend `routes/medications.js`.
@@ -95,7 +95,7 @@ The frontend is a **Single Page Application (SPA)** built for speed and a smooth
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend**: React.js, Tailwind CSS, Recharts.
 * **Backend**: Node.js, Express.js.
@@ -105,7 +105,7 @@ The frontend is a **Single Page Application (SPA)** built for speed and a smooth
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 1. Clone the repository.
 2. **Backend**: Navigate to `/backend`, run `npm install`, and create a `.env` with your `DATABASE_URL` and `JWT_SECRET`.
@@ -113,7 +113,7 @@ The frontend is a **Single Page Application (SPA)** built for speed and a smooth
 4. Open the local URL provided by Vite to view the app.
 
 
-### 🔧 Inventory Logic (CRUD)
+###  Inventory Logic (CRUD)
 The application manages medication lifecycle through a standardized CRUD interface:
 
 * **Create**: Form validation ensures no duplicate medication names.
