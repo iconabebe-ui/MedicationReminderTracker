@@ -97,7 +97,7 @@ The frontend is a **Single Page Application (SPA)** built for speed and a smooth
 
 ## 🛠️ Tech Stack
 
-* **Frontend**: React.js, Vite, Tailwind CSS, Recharts.
+* **Frontend**: React.js, Tailwind CSS, Recharts.
 * **Backend**: Node.js, Express.js.
 * **Database**: PostgreSQL (Relational management of users and logs).
 * **Task Scheduling**: Node-Cron (Daily log generation).
@@ -111,5 +111,16 @@ The frontend is a **Single Page Application (SPA)** built for speed and a smooth
 2. **Backend**: Navigate to `/backend`, run `npm install`, and create a `.env` with your `DATABASE_URL` and `JWT_SECRET`.
 3. **Frontend**: Navigate to `/frontend`, run `npm install`, and run `npm run dev`.
 4. Open the local URL provided by Vite to view the app.
+
+
+### 🔧 Inventory Logic (CRUD)
+The application manages medication lifecycle through a standardized CRUD interface:
+
+* **Create**: Form validation ensures no duplicate medication names.
+* **Read**: Real-time fetching of dose requirements based on the current time.
+* **Update (Stock Management)**: 
+    * `POST /log`: Subtracts 1 unit from inventory upon a "Taken" status.
+    * `PUT /medications/:id`: Manually resets stock counts during refills.
+* **Delete**: Soft-delete implementation to maintain historical adherence records.
 
 ```
